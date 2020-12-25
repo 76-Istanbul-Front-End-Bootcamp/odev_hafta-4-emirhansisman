@@ -1,36 +1,58 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css" type="text/css"/>
-</head>
-<body>
-    <header>
-        EXCHANGE APP
-    </header>
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+      type="text/css"
+    />
+    <script
+      src="https://kit.fontawesome.com/90db000e62.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>EXCHANGE APP</header>
     <div class="container">
-        <div class="currency-box" id="currency-box-from">
-            <p>From:</p>
+      <div class="box-container">
+        <div>
+          <div class="currency-box" id="currency-box-from">
+            <p>FROM</p>
+          </div>
         </div>
-        <div class="currency-box" id="currency-box-to">
-            <p>To:</p>
+        <div class="button-swap-container">
+          <button id="button-swap">
+            <i class="fas fa-exchange-alt fa-2x"></i>
+          </button>
         </div>
-        <div class="currency-amount">
-            <label>Amount</label>
-            <input type="text" value="1" name="amount">
+        <div>
+          <div class="currency-box" id="currency-box-to">
+            <p>TO</p>
+          </div>
         </div>
+      </div>
+      <div class="currency-amount">
+        <label>Amount</label>
+        <input type="text" value="1" name="amount" />
+      </div>
+      <div>
         <div class="currency-calculate" id="calculate-button">
-            <button>Calculate</button>
+          <button>Calculate</button>
         </div>
-
-        <div class="currecy-result" id="currency-result">
-        </div>
+        <div class="currency-result" id="currency-result"></div>
+      </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
